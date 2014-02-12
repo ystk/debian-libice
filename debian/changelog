@@ -1,3 +1,50 @@
+libice (2:1.0.8-2) unstable; urgency=low
+
+  * Add missing Replaces/Breaks on libice-dev in the doc package.  Thanks,
+    Sven Joachim!
+
+ -- Julien Cristau <jcristau@debian.org>  Mon, 09 Apr 2012 20:08:47 +0200
+
+libice (2:1.0.8-1) unstable; urgency=low
+
+  * New upstream release.
+  * Bump xutils-dev, xmlto and xorg-sgml-doctools build-deps.
+  * Pass the shlib version to dh_makeshlibs instead of using a .shlibs file.
+  * Stop installing xorg.css, it's no longer shipped.
+  * Don't require (fake)root for debian/rules clean.
+  * Split the protocol spec and API doc to a separate libice-doc package.
+    Disable the docs in the build-arch target.
+  * Mark libice-dev as multi-arch capable.
+
+ -- Julien Cristau <jcristau@debian.org>  Mon, 09 Apr 2012 17:01:09 +0200
+
+libice (2:1.0.7-2) unstable; urgency=low
+
+  * Team upload.
+
+  [ Julien Cristau ]
+  * Drop Pre-Depends on x11-common, only needed for upgrades from the
+    monolith.
+  * Remove David Nusinow from Uploaders.
+  * Bump Standards-Version to 3.9.2.
+
+  [ Steve Langasek ]
+  * Build for multiarch.
+
+ -- Julien Cristau <jcristau@debian.org>  Thu, 09 Jun 2011 20:46:55 +0200
+
+libice (2:1.0.7-1) unstable; urgency=low
+
+  * New upstream release.
+  * Drop 0001-Set-the-close-on-exec-flag-for-listening-sockets.patch
+  * Bump xutils-dev build-dep for new macros.
+  * Add xmlto, xorg-sgml-doctools, and w3m build-dep for the doc.
+  * Kill *.xml in the doc directory, no point in shipping them.
+  * Ship *.html, *.css, and *.txt from the doc directory.
+  * Switch from --list-missing to --fail-missing for additional safety.
+
+ -- Cyril Brulebois <kibi@debian.org>  Mon, 08 Nov 2010 01:24:07 +0100
+
 libice (2:1.0.6-2) unstable; urgency=low
 
   [ Julien Cristau ]
