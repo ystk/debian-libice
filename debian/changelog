@@ -1,3 +1,11 @@
+libice (2:1.0.9-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Remove Cyril from Uploaders.
+  * Rewrite debian/rules using dh.  Switch to compat level 9.
+
+ -- Julien Cristau <jcristau@debian.org>  Sun, 13 Jul 2014 01:38:11 +0200
+
 libice (2:1.0.8-2) unstable; urgency=low
 
   * Add missing Replaces/Breaks on libice-dev in the doc package.  Thanks,
