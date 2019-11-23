@@ -14,6 +14,7 @@ Build-Depends:
  automake,
  libtool,
  xutils-dev (>= 1:7.6+2),
+ libbsd-dev
 Build-Depends-Indep:
  xmlto (>= 0.0.22),
  xorg-sgml-doctools (>= 1:1.8),

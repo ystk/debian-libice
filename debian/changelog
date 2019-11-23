@@ -1,3 +1,11 @@
+libice (2:1.0.9-1+deb8u1) jessie-security; urgency=high
+
+  * Non-maintainer upload by the LTS Team. 
+  * CVE-2017-2626
+    Build-depend on libbsd-dev for arc4random_buf to avoid weak entropy.
+ 
+ -- Thorsten Alteholz <debian@alteholz.de>  Sat, 23 Nov 2019 16:03:02 +0100
+
 libice (2:1.0.9-1) unstable; urgency=medium
 
   * New upstream release.
